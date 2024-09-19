@@ -1,10 +1,8 @@
 # Ticketmaster assessment
 
-## Varnish VCL Configuration
+## Raw VCL
 
-This Varnish Configuration Language (VCL) file provides several features, including load balancing between backends, error handling, URL redirection, and custom responses. Below is an overview of the key functionality implemented.
-
-## Features
+## Actions
 
 1. **Multiple Origins with Round-Robin Load Balancing**  
 We use a director to group two backends, both pointing to the same origin (`https://http-me.glitch.me`). The round-robin director ensures load balancing between these two backends.
